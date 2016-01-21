@@ -56,7 +56,7 @@
 
 - (void)startTimer {
     // タイマーインスタンスを作成
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tick:) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(tick:) userInfo:nil repeats:YES];
     if (startTime == nil) {
         startTime = [NSDate date];
     } else {
